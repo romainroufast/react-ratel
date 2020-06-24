@@ -1,6 +1,6 @@
 {
   "name": "react-ratel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Another set of wrappers on top of intelligent libraries.",
   "author": "Romain Roufast",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "react-select": "^2.1.1",
     "react-virtualized": "^9.21.0",
     "styled-bootstrap-grid": "^1.1.0-2",
-    "styled-components": "^4.0.2",
+    "styled-components": "^5.1.1",
     "styled-components-breakpoint": "^2.1.0",
     "styled-components-spacing": "^3.1.0"
   },
@@ -70,8 +70,8 @@
     "react-select": "2.4.2",
     "react-virtualized": "^9.21.0",
     "styled-bootstrap-grid": "^1.1.0-2",
-    "styled-components": "^4.1.2",
-    "styled-components-breakpoint": "2.1.1",
-    "styled-components-spacing": "3.1.1"
+    "styled-components": "^5.1.1",
+    "styled-components-breakpoint": "^3.0.0-preview.20",
+    "styled-components-spacing": "^3.1.1"
   }
 }
