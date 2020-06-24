@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { darken, lighten } from "polished";
+import { getBorder } from "../utils";
 
 const Input = styled.input`
     margin:0;
@@ -12,7 +13,8 @@ const Input = styled.input`
     box-sizing: border-box;
     box-shadow: none;
     border-radius: ${(props) => props.theme.border.radius};
-    border: none;
+    ${(props) =>
+      getBorder(props.theme.form.borderSize, props.theme.form.borderColor)}
     padding: 1.05em;
     background: rgb(${(props) => props.theme.form.backgroundColor});
     color: rgb(${(props) => props.theme.form.color});

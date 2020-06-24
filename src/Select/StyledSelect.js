@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import Select, { components } from "react-select";
 import Close from "../Icon/Close";
 import { darken, lighten } from "polished";
+import { getBorderValue } from "../utils";
 
 const ClearIndicator = (props) => {
   const {
@@ -53,7 +54,11 @@ export const getCustomSelectStyles = (props) => {
   return {
     control: (base, state) => ({
       ...base,
-      border: state.isFocused ? "none !important" : "none !important",
+      // border: state.isFocused ? "none !important" : "none !important",
+      border: `${getBorderValue(
+        theme.form.borderSize,
+        theme.form.borderColor
+      )} !important`,
       boxShadow: "none !important",
       boxSizing: "border-box",
       outline: state.isFocused ? 0 : 1,

@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { getBorder } from "../utils";
 
 const WIDTH = "52px";
 const HEIGHT = "24px";
 const BALL_SIZE = "18px";
 const MARGIN_LEFT = "30px";
-const MARGIN = "3px";
+const MARGIN = "2px 3px 3px 3px";
 
 const LG_WIDTH = "62px";
 const LG_HEIGHT = "30px";
 const LG_BALL_SIZE = "22px";
 const LG_MARGIN_LEFT = "36px";
-const LG_MARGIN = "4px";
+const LG_MARGIN = "3px 4px 4px 4px";
 
 const CheckBoxWrapper = styled.div`
   position: relative;
@@ -20,6 +21,8 @@ const CheckBoxWrapper = styled.div`
 `;
 
 const CheckBoxLabel = styled.label`
+  ${(props) =>
+    getBorder(props.theme.form.borderSize, props.theme.form.borderColor)}
   position: absolute;
   top: 0;
   left: 0;

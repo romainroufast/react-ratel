@@ -101,11 +101,13 @@ const DarkTheme = {
       ...DefaultTheme.form,
       color: "240, 243, 255",
       backgroundColor: "67, 75, 105",
+      borderSize: "1px",
+      borderColor: "56,62,92",
     },
     border: {
       ...DefaultTheme.border,
       color: "56,62,92",
-      radius: "8px",
+      radius: "3px",
     },
   },
 };

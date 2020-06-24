@@ -616,6 +616,7 @@ class DatePicker extends React.Component {
         <InputWrapper>
           <Input
             onClick={this.open}
+            onFocus={this.open}
             value={
               (value &&
                 parsedValue &&

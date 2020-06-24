@@ -42,12 +42,14 @@ export default {
   },
   form: {
     color: "28,33,41", // same as body
-    backgroundColor: "245,245,245",
+    backgroundColor: "255, 255, 255",
+    borderSize: "1px",
+    borderColor: "62,64,66",
     inputHeight: "2.7rem",
     inputLgHeight: "3.9rem",
   },
   border: {
     color: "62,64,66",
-    radius: "8px",
+    radius: "3px",
   },
 };
