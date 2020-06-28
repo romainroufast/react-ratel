@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "example/*": "./src",
+      "@react-ratel/core": "../packages/react-ratel/build"
+    }
+  }
+}

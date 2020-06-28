@@ -15,19 +15,19 @@ export default {
       format: "cjs",
       globals: {
         react: "React",
-        "react-dom": "ReactDOM"
+        "react-dom": "ReactDOM",
       },
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: "es",
       globals: {
         react: "React",
-        "react-dom": "ReactDOM"
+        "react-dom": "ReactDOM",
       },
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
   external: [
     "styled-components",
@@ -36,19 +36,20 @@ export default {
     "lodash",
     "react",
     "react-dom",
-    "@tippy.js/react"
+    "@tippy.js/react",
+    "react-select",
   ],
   plugins: [
     external(),
     postcss({
-      modules: true
+      modules: true,
     }),
     url(),
     babel({
       exclude: "node_modules/**",
-      plugins: ["external-helpers"]
+      plugins: ["external-helpers"],
     }),
     resolve(),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 };

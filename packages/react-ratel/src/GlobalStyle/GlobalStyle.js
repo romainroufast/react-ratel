@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import breakpoint from "styled-components-breakpoint";
+// import breakpoint from "styled-components-breakpoint";
 import tooltipCss from "../Tooltip/css";
 // @font-face {
 //     font-family: ${props => props.theme.font.family || 'Arial sans-serif'};
@@ -16,18 +16,6 @@ export default createGlobalStyle`
         background-color: ${(props) => props.theme.body.bg};
         color: ${(props) => props.theme.body.color};
         font-size: ${(props) => props.theme.font.size || "14px"};
-
-        ${breakpoint("xs")`
-            font-size: .75rem;
-        `}
-
-        ${breakpoint("sm")`
-            font-size: .9rem;
-        `}
-
-        ${breakpoint("md")`
-            font-size: ${(props) => props.theme.font.size || "14px"};
-        `}
     }
 
     input, textarea, select, button {

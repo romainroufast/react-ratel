@@ -1,0 +1,88 @@
+{
+  "name": "@react-ratel/core",
+  "version": "0.0.5",
+  "private": false,
+  "author": "Romain Roufast",
+  "description": "React full library",
+  "keywords": [
+    "react",
+    "react-component",
+    "simple ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romainroufast/react-ratel",
+    "directory": "packages/react-ratel"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romainroufast/react-ratel/issues"
+  },
+  "homepage": "https://github.com/romainroufast/react-ratel",
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm && yarn build:es && yarn build:copy-files",
+    "build:cjs": "node ../../scripts/build cjs",
+    "build:esm": "node ../../scripts/build esm",
+    "build:es": "node ../../scripts/build es",
+    "build:umd": "cross-env BABEL_ENV=production-umd rollup -c scripts/rollup.config.js",
+    "build:copy-files": "node ../../scripts/copy-files.js",
+    "build:types": "tsc -p tsconfig.build.json",
+    "extract-error-codes": "cross-env MUI_EXTRACT_ERROR_CODES=true yarn build:esm",
+    "prebuild": "rimraf build",
+    "release": "yarn build && npm publish build --tag latest"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.8.6",
+    "dayjs": "^1.7.7",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.5.4",
+    "react": "^16.13.0",
+    "react-datetime": "^2.16.2",
+    "react-dom": "^16.13.0",
+    "react-flag-icon-css": "^1.0.24",
+    "react-icons-kit": "^1.2.0",
+    "react-is": "^16.5.2",
+    "react-select": "^2.1.1",
+    "react-virtualized": "^9.21.0",
+    "styled-bootstrap-grid": "^1.1.0-2",
+    "styled-components": "^5.1.1",
+    "styled-components-breakpoint": "^2.1.0",
+    "styled-components-spacing": "^3.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@types/react-transition-group": "^4.2.0",
+    "clsx": "^1.0.4",
+    "hoist-non-react-statics": "^3.3.2",
+    "popper.js": "1.16.1-lts",
+    "prop-types": "^15.7.2",
+    "react-is": "^16.8.0",
+    "react-transition-group": "^4.4.0",
+    "@tippyjs/react": "^4.0.0-alpha.4",
+    "dayjs": "^1.7.7",
+    "lodash": "^4.17.11",
+    "polished": "^3.4.1",
+    "react-datetime": "^2.16.2",
+    "react-flag-icon-css": "^1.0.24",
+    "react-icons-kit": "^1.2.0",
+    "react-select": "2.4.2",
+    "react-virtualized": "^9.21.0",
+    "styled-bootstrap-grid": "^1.1.0-2",
+    "styled-components": "^5.1.1",
+    "styled-components-breakpoint": "^3.0.0-preview.20",
+    "styled-components-spacing": "^3.1.1"
+  },
+  "devDependencies": {},
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

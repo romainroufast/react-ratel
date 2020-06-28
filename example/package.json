@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "react-ratel": "link:..",
+    "@react-ratel/core": "link:../packages/react-ratel/src",
     "dayjs": "^1.8.0",
     "prop-types": "^15.6.2",
     "react": "^16.13.0",
@@ -16,10 +16,10 @@
     "**/react-dom": "^16.13.0"
   },
   "scripts": {
-    "start": "PORT=3002 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "PORT=3002 react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
   },
   "browserslist": {
     "production": [
@@ -32,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-app-rewire-alias": "^0.1.6",
+    "react-app-rewired": "^2.1.6"
   }
 }
