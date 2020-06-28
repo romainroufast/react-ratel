@@ -10,6 +10,7 @@ import LeftArrow from "../Icon/LeftArrow";
 import RightArrow from "../Icon/RightArrow";
 import Close from "../Icon/Close";
 import { lighten } from "polished";
+import { chooseColor } from "../utils";
 
 // localization
 // https://github.com/iamkun/dayjs/blob/master/docs/en/I18n.md
@@ -121,7 +122,11 @@ const SelectableItem = styled.span`
     props.selected &&
     css`
       background-color: ${(props) => `rgb(${props.theme.color.primary})`};
-      color: #fff;
+      color: ${chooseColor(
+        props.theme.color.primary,
+        "255,255,255",
+        props.theme.color.dark
+      )};
       :hover {
         background-color: ${(props) => `rgb(${props.theme.color.primary})`};
       }
