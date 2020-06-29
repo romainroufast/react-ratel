@@ -4,7 +4,7 @@ const Label = styled.label`
   font-weight: bold;
   display: inline-block;
   font-size: 12px;
-  color: ${(props) => props.theme.color.gray};
+  color: ${(props) => `rgb(${props.theme.color.gray})`};
   margin-bottom: 0.85rem;
 
   ${(props) =>
