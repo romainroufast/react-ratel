@@ -6,6 +6,7 @@ const Label = styled.label`
   font-size: 12px;
   color: ${(props) => `rgb(${props.theme.color.gray})`};
   margin-bottom: 0.85rem;
+  margin-top: 0.7rem;
 
   ${(props) =>
     props.block &&

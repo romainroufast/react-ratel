@@ -1,6 +1,6 @@
 {
   "name": "@react-ratel/core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "author": "Romain Roufast",
   "description": "React full library",
