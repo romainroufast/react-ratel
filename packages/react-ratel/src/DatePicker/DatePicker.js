@@ -485,7 +485,7 @@ class DatePicker extends React.Component {
   }
 
   loadLocalization(locale) {
-    import(`dayjs/locale/${locale}`).then(() =>
+    import(`dayjs/locale/${locale}.js`).then(() =>
       this.setState({ loadedLocale: locale })
     );
   }
