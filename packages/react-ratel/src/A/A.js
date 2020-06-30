@@ -7,7 +7,7 @@ export default styled.a`
   color: rgb(${(props) => props.theme.color.blue});
 
   &:hover {
-    color: ${darken("0.1", `rgb(${props.theme.color.blue})`)};
+    color: ${(props) => darken("0.1", `rgb(${props.theme.color.blue})`)};
   }
 
   ${(props) =>
