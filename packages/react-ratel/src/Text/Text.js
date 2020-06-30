@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 export default styled.span`
-    display: block;
     position: relative;
 
     ${(props) =>
@@ -11,9 +10,9 @@ export default styled.span`
       `}
 
     ${(props) =>
-      props.inline &&
+      props.block &&
       css`
-        display: inline-block;
+        display: block;
       `}
 
     ${(props) =>

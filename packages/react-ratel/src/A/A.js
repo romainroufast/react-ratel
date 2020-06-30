@@ -1,31 +1,23 @@
 import styled, { css } from "styled-components";
 
 export default styled.a`
-    cursor: pointer;
-    text-decoration: none;
-    color: rgb(${(props) => props.theme.color.primary});
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(${(props) => props.theme.color.blue});
 
-    ${(props) =>
-      props.dark &&
-      css`
-        color: ${props.theme.color.dark};
-      `}
+  &:hover {
+    color: ${darken("0.1", `rgb(${props.theme.color.blue})`)};
+  }
 
-    ${(props) =>
-      props.light &&
-      css`
-        color: rgb(${(props) => props.theme.color.light});
-      `}
+  ${(props) =>
+    props.color &&
+    css`
+      color: ${props.color};
+    `}
 
-    ${(props) =>
-      props.color &&
-      css`
-        color: ${props.color};
-      `}
-
-    ${(props) =>
-      props.block &&
-      css`
-        display: block;
-      `}
+  ${(props) =>
+    props.block &&
+    css`
+      display: block;
+    `}
 `;
