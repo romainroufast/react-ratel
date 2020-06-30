@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { darken, lighten } from "polished";
+import { darken } from "polished";
 import { chooseColor } from "../utils";
 
 export default styled.button`
